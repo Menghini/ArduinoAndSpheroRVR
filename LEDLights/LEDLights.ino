@@ -1,10 +1,10 @@
-#include <SpheroRVR.h>
+#include <SpheroRVR.h> //Always needed if using a SpheroRVR
 
-static uint32_t ledGroup;
+static uint32_t ledGroup; //Specifically for the lights
 
 void setup() {
     // set up communication with the RVR.
-    rvr.configUART(&Serial); //Do not remove or change this line
+    rvr.configUART(&Serial); //Do not remove or change this line. Always needed if using a SpheroRVR
 
     // setting up the led group for both headlights. 
     ledGroup = 0; //Do not remove or change this line
