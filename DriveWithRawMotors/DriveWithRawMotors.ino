@@ -28,4 +28,6 @@ void loop() {
   // turn both motors off
   rvr.rawMotors(RawMotorModes::off, 0, RawMotorModes::off, 0);
   delay(1000);
+
+  exit(0); //Exits the program (so the robot doesn't keep running)
 }
