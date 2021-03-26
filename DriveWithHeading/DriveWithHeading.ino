@@ -32,4 +32,6 @@ void loop() {
     // stop driving
     rvr.driveWithHeading(0, 270, static_cast<uint8_t>(DriveFlags::none));
     delay(1000);
+
+    exit(0); //Exits the program (so the robot doesn't keep running)
 }
